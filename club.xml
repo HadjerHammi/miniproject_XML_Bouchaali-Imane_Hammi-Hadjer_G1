@@ -1,0 +1,192 @@
+<club xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nom="Info_Tech" xsi:noNamespaceSchemaLocation="club.xsd">
+
+  <!-- ═══ CATÉGORIES ═══ -->
+  <categories>
+    <categorie id="C1" libelle="Intelligence Artificielle"/>
+    <categorie id="C2" libelle="Développement Web"/>
+    <categorie id="C3" libelle="Sécurité Informatique"/>
+    <categorie id="C4" libelle="Réseaux et Systèmes"/>
+  </categories>
+
+  <!-- ═══ MEMBRES ═══ -->
+  <membres>
+    <!-- Catégorie C1 : Intelligence Artificielle -->
+    <membre id="M001" categorieRef="C1">
+      <nom>Benali</nom>
+      <prenom>Ahmed</prenom>
+      <email>a.benali@club.dz</email>
+    </membre>
+    <membre id="M002" categorieRef="C1">
+      <nom>Meziane</nom>
+      <prenom>Rania</prenom>
+      <email>r.meziane@club.dz</email>
+    </membre>
+    <membre id="M003" categorieRef="C1">
+      <nom>Hamidi</nom>
+      <prenom>Yacine</prenom>
+      <email>y.hamidi@club.dz</email>
+    </membre>
+    
+
+    <!-- Catégorie C2 : Développement Web -->
+    <membre id="M004" categorieRef="C2">
+      <nom>Khelif</nom>
+      <prenom>Sara</prenom>
+      <email>s.khelif@club.dz</email>
+    </membre>
+    <membre id="M005" categorieRef="C2">
+      <nom>Boukhalfa</nom>
+      <prenom>Karim</prenom>
+      <email>k.boukhalfa@club.dz</email>
+    </membre>
+    <membre id="M006" categorieRef="C2">
+      <nom>Laib</nom>
+      <prenom>Nour</prenom>
+      <email>n.laib@club.dz</email>
+    </membre>
+
+    <!-- Catégorie C3 : Sécurité Informatique -->
+    <membre id="M007" categorieRef="C3">
+      <nom>Zerrouk</nom>
+      <prenom>Omar</prenom>
+      <email>o.zerrouk@club.dz</email>
+    </membre>
+    <membre id="M008" categorieRef="C3">
+      <nom>Bensalem</nom>
+      <prenom>Fatima</prenom>
+      <email>f.bensalem@club.dz</email>
+    </membre>
+    <membre id="M009" categorieRef="C3">
+      <nom>Chaibi</nom>
+      <prenom>Amine</prenom>
+      <email>a.chaibi@club.dz</email>
+    </membre>
+    <membre id="M013" categorieRef="C3">
+      <nom>Blaid</nom>
+      <prenom>Asma</prenom>
+      <email>b.asma@club.dz</email>
+    </membre>
+
+    <!-- Catégorie C4 : Réseaux et Systèmes -->
+    <membre id="M010" categorieRef="C4">
+      <nom>Djebbar</nom>
+      <prenom>Lyes</prenom>
+      <email>l.djebbar@club.dz</email>
+    </membre>
+    <membre id="M011" categorieRef="C4">
+      <nom>Sahli</nom>
+      <prenom>Meriem</prenom>
+      <email>m.sahli@club.dz</email>
+    </membre>
+    <membre id="M012" categorieRef="C4">
+      <nom>Sami</nom>
+      <prenom>Boudiaf</prenom>
+      <email>b.sami@club.dz</email>
+    </membre>
+    <membre id="M015" categorieRef="C4">
+        <nom>Sami</nom>
+        <prenom>Lizidi</prenom>
+        <email>L.sami@club.dz</email>
+    </membre>
+    <membre id="M016" categorieRef="C1"><nom>Hammi</nom>
+      <prenom>Imane</prenom><email>i.hammi@club.dz</email></membre>
+     </membres> 
+  <!-- ═══ CONCOURS ═══ -->
+  <concours>
+
+    <!-- Concours C1 : Intelligence Artificielle -->
+    <concours id="CO1" categorieRef="C1" date="2026-02-15" coefficient="2">
+      <titre>Concours IA — Printemps 2026</titre>
+      <participants>
+        <participant membreRef="M001">
+          <complexite>85</complexite>        <!-- score algo /100 -->
+          <tempsExecution>120</tempsExecution><!-- ms -->
+          <!-- score = (85 + 120) × 1.5 = 307.5 -->
+        </participant>
+        <participant membreRef="M002">
+          <complexite>90</complexite>
+          <tempsExecution>95</tempsExecution>
+          <!-- score = (90 + 95) × 1.5 = 277.5 -->
+        </participant>
+        <participant membreRef="M003">
+          <complexite>78</complexite>
+          <tempsExecution>140</tempsExecution>
+          <!-- score = (78 + 140) × 1.5 = 327.0 -->
+        </participant>
+      <participant membreRef="M014">
+        <complexite>50</complexite>
+        <tempsExecution>80</tempsExecution>
+      </participant>
+    </participants>
+    </concours>
+
+    <!-- Concours C2 : Développement Web -->
+    <concours id="CO2" categorieRef="C2" date="2026-03-10" coefficient="2">
+      <titre>Concours Web — Avril 2026</titre>
+      <participants>
+        <participant membreRef="M004">
+          <complexite>70</complexite>
+          <tempsExecution>200</tempsExecution>
+          <!-- score = (70 + 200) × 1.2 = 324.0 -->
+        </participant>
+        <participant membreRef="M005">
+          <complexite>88</complexite>
+          <tempsExecution>150</tempsExecution>
+          <!-- score = (88 + 150) × 1.2 = 285.6 -->
+        </participant>
+        <participant membreRef="M006">
+          <complexite>95</complexite>
+          <tempsExecution>110</tempsExecution>
+          <!-- score = (95 + 110) × 1.2 = 246.0 -->
+        </participant>
+      </participants>
+    </concours>
+
+    <!-- Concours C3 : Sécurité Informatique -->
+    <concours id="CO3" categorieRef="C3" date="2026-04-20" coefficient="2.5">
+      <titre>Concours Sécurité — Mai 2026</titre>
+      <participants>
+        <participant membreRef="M007">
+          <complexite>60</complexite>
+          <tempsExecution>300</tempsExecution>
+          <!-- score = (60 + 300) × 2.0 = 720.0 -->
+        </participant>
+        <participant membreRef="M008">
+          <complexite>75</complexite>
+          <tempsExecution>250</tempsExecution>
+          <!-- score = (75 + 250) × 2.0 = 650.0 -->
+        </participant>
+        <participant membreRef="M009">
+          <complexite>82</complexite>
+          <tempsExecution>180</tempsExecution>
+          <!-- score = (82 + 180) × 2.0 = 524.0 -->
+        </participant>
+      <participant membreRef="M013">
+        <complexite>70</complexite>
+        <tempsExecution>100</tempsExecution>
+      </participant>
+    </participants>
+    </concours>
+
+    <!-- Concours C4 : Réseaux et Systèmes -->
+    <concours id="CO4" categorieRef="C4" date="2026-05-05" coefficient="1.8">
+      <titre>Concours Réseaux — Juin 2026</titre>
+      <participants>
+        <participant membreRef="M010">
+          <complexite>91</complexite>
+          <tempsExecution>130</tempsExecution>
+          <!-- score = (91 + 130) × 1.8 = 397.8 -->
+        </participant>
+        <participant membreRef="M011">
+          <complexite>67</complexite>
+          <tempsExecution>220</tempsExecution>
+          <!-- score = (67 + 220) × 1.8 = 516.6 -->
+        </participant>
+      <participant membreRef="M012"><complexite>80</complexite>
+        <tempsExecution>90</tempsExecution></participant>
+        <participant membreRef="M015"><complexite>70</complexite><tempsExecution>100</tempsExecution></participant></participants>
+    </concours>
+
+  </concours>
+
+</club>
